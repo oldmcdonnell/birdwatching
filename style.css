@@ -1,12 +1,17 @@
+.grid-container{
+  display: grid;
+}
+
+
 .flex-container{
   display: flex;
   align-items: stretch;
-  background-color: #bcbfef;
+  background-color: #dbdcf0;
 
 }
 
 .flex-container > div {
-  background-color: rgb(50, 119, 188);
+  background-color: rgb(168, 208, 249);
   color: rgb(0, 0, 0);
   width: 200px;
   margin: 10px;
