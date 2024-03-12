@@ -6,6 +6,9 @@ p{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+ul{
+  list-style-type: circle;
+}
 
 .p1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -32,6 +35,8 @@ p{
   width: 200px;
   margin: 10px;
   text-align: center;
+  align-items: center;
+  justify-content: center;
   line-height: 75px;
   font-size: 20px;
 }
@@ -57,3 +62,34 @@ a:active{
 }
 
 
+.grid-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  background-color: rgb(203, 203, 244);
+  padding: 10px;
+  grid-template-areas:
+  "image1" "image1" "image1" "image1"
+  ;
+}
+
+.image1 {
+  grid-area: image1;
+}
+
+img {
+  max-width: 1005;
+  height: auto;
+}
+
+img:hover {
+  box-shadow: 0 0 2px rgba(0, 140, 186, 0.5);
+}
+
+.grid-item{
+  background-color: aliceblue;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
