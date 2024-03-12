@@ -1,0 +1,44 @@
+.flex-container{
+  display: flex;
+  align-items: stretch;
+  background-color: #bcbfef;
+
+}
+
+.flex-container > div {
+  background-color: rgb(50, 119, 188);
+  color: rgb(0, 0, 0);
+  width: 200px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 20px;
+}
+
+
+
+a:link {
+  color: rgb(0, 0, 0);
+}
+
+a:link{
+  color: rgba(0, 0, 0, 0.238);
+}
+
+a:link (
+  text-decoration: none;
+)
+
+a:visited{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+a:active{
+  text-decoration: underline;
+}
+
+
