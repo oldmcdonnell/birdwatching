@@ -5,6 +5,44 @@
 <title>Birdwatching Example</title>
 <link rel="stylesheet" href="style.css">
 
+<style>
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 10px;
+        background-color: rgb(203, 203, 244);
+        padding: 10px;
+        grid-template-areas:
+        "image1" "image1" "image1" "image1"
+        ;
+    }
+    
+    .image1 {
+        grid-area: image1;
+    }
+
+    img {
+        max-width: 1005;
+        height: auto;
+    }
+
+    img:hover {
+        box-shadow: 0 0 2px rgba(0, 140, 186, 0.5);
+    }
+
+    .grid-item{
+        background-color: aliceblue;
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    a:link {
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    )
+</style>
 
 </head>
 
@@ -54,6 +92,24 @@
         <li>Camera</li>
     </ul>
 </div>
+
+<h3> <div id=""> Photos</div></h3>
+<div class="grid-container">
+            <div><a target="_blank" href="assets/favorite-1.jpg">
+                <img src="assets/favorite-1_th.jpg">
+            </a></div>
+            <div>
+                <a target="_blank" href="assets/favorite-2.jpg">
+                    <img src="assets/favorite-2_th.jpg">
+                </a>
+            </div>
+            <div><a target="_blank" href="assets/favorite-3.jpg">
+                <img src="assets/favorite-3_th.jpg">
+            </a></div>
+            <div><a target="_blank" href="assets/favorite-4.jpg">
+                <img src="assets/favorite-4_th.jpg">
+            </a></div>
+        </div>
 
 </Body>
 <footer>
