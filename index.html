@@ -6,6 +6,13 @@
 <link rel="stylesheet" href="style.css">
 
 <style>
+    a.fill-div {
+        display: block;
+        height: 100%;
+        width: 100%;
+        text-decoration: none;
+    }
+
     .grid-container{
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -48,13 +55,13 @@
 
 <Body style="background-color: aliceblue;">
     <h1>Birdwatching</h1>
-    <img src="assets/dove.png" alt="image o dove" style="width: auto;height: 150px;">
+    <img src="assets/dove.gif" alt="image o dove" style="width: auto;height: 150px;">
 
     <div class="flex-container">
-        <div><a href="#started">Get Started</a></div>
-        <div><a href="#photos">Photos</a></div>
-        <div><a href="#gear">Gear</a></div>
-        <div><a href=https://www.birdforum.net/>Forum</a></div>
+        <div><a href="#started" class="fill-div">Get Started</a></div>
+        <div><a href="#photos" class="fill-div">Photos</a></div>
+        <div><a href="#gear" class="fill-div">Gear</a></div>
+        <div><a href="https://www.birdforum.net/"" class="fill-div">Forum</a></div>
     </div>
 
 
